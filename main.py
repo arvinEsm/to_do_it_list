@@ -19,7 +19,7 @@ def menu() :
         show_task = obj1.get_info()
     
         print (f"{show_task} seccussfully added .\nur dead_line is in  : ")
-        TT = obj1.get_info("time")
+        TT = obj1.get_info("dead_line")
         print (f"TT\n")
         print ("warnning : ur delay has a serious consequences  . ") 
 
@@ -33,9 +33,10 @@ def menu() :
 
 
     if button == '2' :
-       obj1 = save_and_load()
-       pending = obj1.load(_, )
+       obj_load = save_and_load()
+       pending = obj_load.load(_, )
        print(f"below taskes is pending :  \n{pending}")
+       
 
 
 
