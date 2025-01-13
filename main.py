@@ -1,7 +1,7 @@
 from s_and_l import *
 import time
 from datetime import datetime
-
+import subprocess 
 
 
 # global hashtag_value = 0 
@@ -38,13 +38,19 @@ def menu() :
        print(f"below taskes is pending :  \n{pending}")
        
 
+    if button == '3'
+        cpp_file = "about.cpp" 
+        try :
+            compile_command = ["g++ , cpp_file , "-o" , "about""]
+            subprocess.run (compile_command  , check = True )
+            print(welcome to about us , me , about me )
+            run_command = ["./about"]
+            result = subprocess.run(run_command , text = True , capture_output = True )
+            print (result.stdout )
 
 
 
-
-
-
-
+menu()  
 
 
 
