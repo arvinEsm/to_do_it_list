@@ -1,10 +1,10 @@
 from s_and_l import get_info 
 
 objl = save_and_load ()
-tt = objl.get_info("daed_Line")
+tt = objl.get_info()
 
 
-hashtag_value = tt / 20 
+hashtag_value = tt['dead_line'] / 20 
 days_passed = 0  
 
 # Function to save the current state of the loading bar
@@ -22,6 +22,7 @@ def display_loading_bar(days):
     if hashtag > tt:
         hashtag = tt  
     bar = '#' * hashtag + '_' * (tt - hashtag)
+    tt['loadin_b'] = bar
     print(f'\r[{bar}] Days Passed: {days_passed}', end='')
 
 
